@@ -14,18 +14,31 @@
     {
          foreach(MovieModel m in @Model)
         {
-            <div id="movieInfo">
+            //<div id="movieInfo">
+            //<h1>@m.Title</h1>
+            //<h3>@m.Year @m.Genre</h3>
+            //<h3>Rated: @m.Rated</h3>
+            //</div>
+            //<img src="@m.Poster" id="poster" />  
+            //<div id="movieinfo">
+            //<p>@m.Plot</p>
+            //<p>Starring: @m.Actors</p>
+            //<p>Directed by: @m.Director</p>
+            //<p>Written by: @m.Writer</p>
+            //</div>
+
+            <div class="card" style="width: 33%">
+            <img src="@m.Poster"/>
+            <div class="card-body">
             <h1>@m.Title</h1>
             <h3>@m.Year @m.Genre</h3>
             <h3>Rated: @m.Rated</h3>
-            </div>
-            <img src="@m.Poster" id="poster" />  
-            <div id="movieinfo">
             <p>@m.Plot</p>
             <p>Starring: @m.Actors</p>
             <p>Directed by: @m.Director</p>
             <p>Written by: @m.Writer</p>
             </div>
+             </div>
         }
     }
 }
